@@ -27,7 +27,7 @@ document.getElementById('calculate-button').onclick = function() {
 	/* Stores the getResult function return into the operationResult variable*/
 	let operationResult = getResult(val1, val2, operation);
 
-	/* Relates the resultElement variable to the "result" element and the operationResults to it*/
+	/* Relates the resultElement variable to the "result" element and the operationResults to it */
 	let resultElement = document.getElementById('result');
 	resultElement.innerHTML = operationResult;
 
@@ -42,7 +42,6 @@ document.getElementById('calculate-button').onclick = function() {
 		} else {
 			return val1 / val2;	
 		} 
-
 	}
 
 	/* Fuction that display an alert and throws up an error (stoping the following code lines) */
@@ -50,6 +49,4 @@ document.getElementById('calculate-button').onclick = function() {
 		alert('Digite um número válido!')
 		error();
 	}	
-
-
 }
