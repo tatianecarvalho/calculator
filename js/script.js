@@ -12,11 +12,12 @@ document.getElementById('calculate-button').onclick = function() {
 	/* Verifies if any of the values val1 or val2 are NaN and shows up an alert. Gives focus to the first element (if both are NaN or just itself) 
 	or on the second one */
 	if (isNaN (val1)) {
-		treatingNan();
 		document.getElementById('elem-1').focus();
-	} else if (isNaN (val2)) {
 		treatingNan();
+
+	} else if (isNaN (val2)) {
 		document.getElementById('elem-2').focus();
+		treatingNan();
 	}
 
 	/* Identifies which radio button is selected and gives its value to the operation variable */
